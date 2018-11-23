@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@welldone-software/why-did-you-render": "^2.0.5",
     "gsap": "^2.0.2",
     "react": "^16.7.0-alpha.2",
     "react-countdown-clock": "^2.5.0",

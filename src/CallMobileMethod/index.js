@@ -48,3 +48,5 @@ function CallMobileMethod() {
 }
 
 export default CallMobileMethod
+
+// https://medium.com/capital-one-tech/javascript-manipulation-on-ios-using-webkit-2b1115e7e405

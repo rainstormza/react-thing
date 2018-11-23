@@ -5,6 +5,12 @@ import App from './App'
 import * as serviceWorker from './serviceWorker'
 import { BrowserRouter } from 'react-router-dom'
 
+if (process.env.NODE_ENV !== 'production') {
+  const whyDidYouRender = require('@welldone-software/why-did-you-render')
+  whyDidYouRender(React)
+  // https://github.com/welldone-software/why-did-you-render
+}
+
 ReactDOM.render(
   <BrowserRouter>
     <App />
