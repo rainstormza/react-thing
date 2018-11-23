@@ -8,6 +8,7 @@ import NewWindow from './NewWindow'
 import GreenSock from './GreenSock'
 import RenderTesting from './RenderTesting'
 import CallMobileMethod from './CallMobileMethod'
+import FooterFixed from './FooterFixed/index'
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
           </li>
           <li>
             <Link to="/call-mobile-method">CallMobileMethod</Link>
+          </li>
+          <li>
+            <Link to="/footer-fixed">FooterFixed</Link>
           </li>
         </ul>
       </nav>
@@ -64,6 +68,7 @@ function App() {
         <Route path="/greensock" exact component={GreenSock} />
         <Route path="/render-testing" exact component={RenderTesting} />
         <Route path="/call-mobile-method" exact component={CallMobileMethod} />
+        <Route path="/footer-fixed" exact component={FooterFixed} />
       </Switch>
     </div>
   )
