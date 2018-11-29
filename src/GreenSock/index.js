@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { TimelineLite } from 'gsap/all'
+import { TimelineLite } from 'gsap'
 
 class GreenSock extends Component {
   constructor(props) {
