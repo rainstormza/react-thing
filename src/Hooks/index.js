@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Suspense } from 'react'
-import { unstable_createResource as createResource } from 'react-cache'
+// import { unstable_createResource as createResource } from 'react-cache'
 import fetchPokemon from './fetch-pokemon'
+import HooksReducer from './HooksReducer'
 
 function useCounter(initialState) {
   const [count, setCount] = useState(initialState)
@@ -62,6 +63,7 @@ function Hooks() {
           </Suspense>
         ) : null}
       </div>
+      <HooksReducer />
     </div>
   )
 }
