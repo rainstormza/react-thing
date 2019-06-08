@@ -9,7 +9,12 @@ import NewWindow from './NewWindow'
 import GreenSock from './GreenSock'
 import RenderTesting from './RenderTesting'
 import CallMobileMethod from './CallMobileMethod'
-import FooterFixed from './FooterFixed/index'
+import FooterFixed from './FooterFixed'
+// import ReduxTools from './ReduxTools'
+import IntersectionObserver from './IntersectionObserver'
+import AOSAnimation from './ScrollAnimation'
+import ScrollMagic from './ScrollMagic'
+import FullPage from './FullPage'
 
 function App() {
   return (
@@ -43,6 +48,9 @@ function App() {
           <li>
             <Link to="/footer-fixed">FooterFixed</Link>
           </li>
+          <li>
+            <Link to="/fullpage">FullPage</Link>
+          </li>
         </ul>
       </nav>
       <Switch>
@@ -74,9 +82,16 @@ function App() {
         <Route path="/render-testing" exact component={RenderTesting} />
         <Route path="/call-mobile-method" exact component={CallMobileMethod} />
         <Route path="/footer-fixed" exact component={FooterFixed} />
+        <Route path="/fullpage" exact component={FullPage} />
       </Switch>
+      <AOSAnimation />
+      <ScrollMagic />
+      <IntersectionObserver />
     </div>
   )
 }
 
 export default App
+
+// https://github.com/bitworking/react-scrollmagic
+// http://scrollmagic.io/examples/expert/bezier_path_animation.html
